@@ -1,0 +1,280 @@
+html {
+  /**
+ * cursor: none;
+ */
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  position: absolute;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color:#FFFFFF;
+  color: #aaa;
+  font-family: "Lato-Hairline", sans-serif;
+  font-weight: 100;
+  line-height: 1.5em;	
+  /*-webkit-font-smoothing: antialiased;
+  -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+    -khtml-transition: background-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out;*/
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    /*background-color: lightgrey;*/
+	-webkit-align-items: stretch;
+    align-items: stretch;
+	-webkit-flex-wrap: nowrap; /* Safari */
+  	flex-wrap: nowrap;
+	 -webkit-justify-content: space-between; /* Safari */
+  	justify-content: space-between;
+}
+.flex-container-content {
+    display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: flex-start;
+    align-items: flex-start;
+	-webkit-flex-wrap: nowrap; /* Safari */
+  	flex-wrap: nowrap;
+	 -webkit-justify-content: space-between; /* Safari */
+  	justify-content: space-between;
+	flex-direction: row;
+	max-height: 40%;
+}
+.flex-container-center {
+    display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: stretch;
+    align-items: stretch;
+	-webkit-flex-wrap: nowrap; /* Safari */
+  	flex-wrap: nowrap;
+	 -webkit-justify-content: center; /* Safari */
+  	justify-content: center;
+	flex-direction: row;
+	max-height: 40%;
+	margin-top: 15px;
+}
+.flex-item {
+    margin: 3px;
+}
+.flexbox-parent {
+  @include display-flex;
+  background: #FFD54F;
+  overflow: hidden;
+  width: 100%;
+  padding: 3px;
+  min-height: 550px;
+  max-height: 1000px;
+
+}
+ .flexbox-parent div {
+    display: inline-block;
+    background: white;
+    overflow: hidden;
+    margin: 3px;
+    padding: 5px;
+}
+.flexbox-parent .child-controls {
+      margin-top: 7px;
+}
+#left{
+	width:50%; 
+	text-align: left; 
+}
+
+#right{
+	width:50%;
+	text-align: right; 
+}
+#news { display: table; width: 100%; table-layout: fixed; }
+#news > div { display: table-cell; }
+/**
+ * Default styles.
+ */
+#mic{
+	width: 40px;
+	justify-content: center;
+	padding: 15px;
+}
+.dimmed {
+  color: #666;
+}
+.normal {
+  color: #999;
+}
+.bright {
+  color: #fff;
+}
+.xsmall {
+  font-size: 15px;
+  line-height: 20px;
+}
+.small {
+  font-size: 20px;
+  line-height: 25px;
+}
+.medium {
+  font-size: 30px;
+  line-height: 35px;
+}
+.large {
+  font-size: 40px;
+  line-height: 45px;
+}
+.xlarge {
+  font-size: 60px;
+  line-height: 65px;
+}
+.thin {
+  font-family: "Lato-Hairline", sans-serif;
+  font-weight: 100;
+}
+.light {
+  font-family: "Lato-Hairline", sans-serif;
+  font-weight: 300;
+}
+.regular {
+  font-family: "Lato-Hairline", sans-serif;
+  font-weight: 400;
+}
+.bold {
+  font-family: "Lato-Hairline", sans-serif;
+  font-weight: 500;
+}
+.align-right {
+  text-align: right;
+}
+.align-left {
+  text-align: left;
+}
+.red {
+	color: darkred;
+}
+.green {
+	color: darkgreen;
+}
+header {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Lato-Hairline";
+  font-weight: 400;
+  border-bottom: 1px solid #666;
+  line-height: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #999;
+}
+sup {
+  font-size: 50%;
+  line-height: 50%;
+}
+/**
+ * Module styles.
+ */
+.module {
+  margin-top: 30px;
+}
+
+.module:first-child {
+  margin-top: 0;
+}
+
+.hidden {
+        display: none;
+}
+.visible {
+        display: block;
+ }
+ .center {
+    margin: auto; 
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.cardcontainer {
+	display:inline-block;
+}
+/* Ticker */
+footer {
+	width: 100%;
+	position:fixed;
+	bottom: 0;
+}
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 38px;
+  padding-left: 100%;
+}
+.ticker {
+  display: inline-block;
+  height: 35px;
+  white-space: nowrap;
+  padding-right: 100%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 35s;
+  animation-duration: 35s;
+}
+.ticker__item {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+/*Weather Table*/
+.floating-box {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+    opacity: 0;
+}
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}

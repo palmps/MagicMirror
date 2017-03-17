@@ -1,0 +1,597 @@
+
+<!DOCTYPE html><html>
+
+
+
+<head>
+
+<title>Changing background colour style backgroundColor instead of bgColor</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="http://www.trans4mind.com/personal_development/media-queries.css" type="text/css" />
+
+<meta name="description"
+
+content="Changing background colour style backgroundColor instead of bgColor in java script">
+
+<meta name="keywords" content="bgcolor, backgroundColor, javascript tutorial">
+
+<meta charset="utf-8" />
+
+<script language="JavaScript" src="navigator.js">
+
+<!--//
+
+//-->
+
+</script>
+
+<script language="JavaScript"><!--
+
+function red()
+
+{
+
+document.body.style.backgroundColor="red"
+
+}
+
+function blue()
+
+{
+
+document.body.style.backgroundColor="blue"
+
+}
+
+function fuchsia()
+
+{
+
+document.body.style.backgroundColor="fuchsia"
+
+}
+
+function yellow()
+
+{
+
+document.body.style.backgroundColor="yellow"
+
+}
+
+function white()
+
+{
+
+document.body.style.backgroundColor="white"
+
+}
+
+// -->
+
+		</script>
+
+
+
+<link href="wsb.css" rel="styleSheet" type="text/css">
+
+<link rel="stylesheet" href="http://www.trans4mind.com/personal_development/1dynamicMenu.css" type="text/css">
+
+<link rel="stylesheet" href="http://www.trans4mind.com/personal_development/1dynamicMenu.css" type="text/css">
+
+
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-632060-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="container">
+
+
+
+
+
+<div align="center">
+
+<script language="javascript" src="1dynamicMenu.js">
+
+<!--// 
+
+//--></script>
+
+<center>
+
+<p><table style="border:1px solid #606060; padding:0px; max-width:800px">
+
+  <tr>
+
+    <td><div align="left"><table border="0" cellpadding="5" cellspacing="0">
+
+      <tr>
+
+        
+
+        <td><h1>Ken Ward's <u>New</u> Java Script Tutorial</h1>
+
+        <h2>Java script functions from text - changing background colours 2</h2>
+
+        <p>This page shows how a function can be called from java script by using a text link.<a
+
+        href="changingBgColor.htm">The previous lesson</a> used &quot;bgColor&quot; to do this,
+
+        however, the current practice uses &quot;<strong>backgroundColor</strong>&quot;. </p>
+
+        <hr>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+    </div></td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top"><div align="left"><table style="border:none; padding:5px; max-width:700px">
+
+      <tr>
+
+        <td width="15%" valign="top" style="background-color:silver"></td>
+
+        <td valign="top"><div align="center"><center><table border="0" cellpadding="5"
+
+        cellspacing="0">
+
+          <tr>
+
+            <td style="background-color:red"><a href="#" onclick="red()">red</a></td>
+
+            <td style="background-color:#9595FF"><a href="#" onclick="blue()">blue</a></td>
+
+          </tr>
+
+          <tr>
+
+            <td style="background-color:#ff00ff"><a href="#" onclick="fuchsia()">fuchsia</a></td>
+
+            <td style="background-color:yellow"><a href="#" onclick="yellow()">yellow</a></td>
+
+          </tr>
+
+        </table>
+
+        </center></div><p>&nbsp;</p>
+
+        <form>
+
+          <p><input type="button" value="Back to white background" name="B1" onclick="white()"></p>
+
+        </form>
+
+        <p>Try clicking in the boxes, and then <a href="#" onclick="white()">click here</a> to
+
+        bring things back to some semblance of normality (or click the button above).</p>
+
+        <p>On this page we are calling a function from a text link. As we are clicking, we don't
+
+        want to have a real link here. (And some browsers hate it when we don't put a link in). So
+
+        we have used a '#':</p>
+
+        <blockquote>
+
+          <p><font color="black" size="3">&lt;</font><font color="purple" size="3">a </font><font
+
+          color="red" size="3">href=&quot;</font><font color="blue" size="3">#</font><font
+
+          color="red" size="3">&quot; onclick=&quot;</font><font color="blue" size="3">white()</font><font
+
+          color="red" size="3">&quot;</font><font color="black" size="3">&gt;click ... &lt;/a&gt;</font></p>
+
+        </blockquote>
+
+        <p>We call the function from HTML by using an ONCLICK event. This calls our function:</p>
+
+        <blockquote>
+
+          <p><font color="black" size="3">&lt;</font><font color="purple" size="3">script </font><font
+
+          color="red" size="3">type=&quot;</font><font color="blue" size="3">text/javascript</font><font
+
+          color="red" size="3">&quot;</font><font color="black" size="3">&gt;</font></p>
+
+          <p><font color="black" size="3">&lt;!--//</font></p>
+
+          <font SIZE="4"><p ALIGN="LEFT">function white()</font><font SIZE="4" COLOR="#8080c0"></p>
+
+          <p ALIGN="LEFT">{</p>
+
+          <p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4" COLOR="#0000ff">&quot;white&quot;</font><font
+
+          SIZE="4" COLOR="#8080c0"></p>
+
+          <p ALIGN="LEFT">}</font></p>
+
+          <p><font color="black" size="3">//--&gt;</font></p>
+
+          <p><font color="black" size="3">&lt;</font><font color="purple" size="3">/script</font><font
+
+          color="black" size="3">&gt;</font></p>
+
+        </blockquote>
+
+        <p>So when we click on the link we call a function called, in this case, 'white()'. The
+
+        function has one line of code (for each colour):</p>
+
+        <blockquote>
+
+          <font SIZE="4"><p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4"
+
+          COLOR="#0000ff">&quot;white&quot;</font></p>
+
+        </blockquote>
+
+        <h2>JavaScript is case sensitive!</h2>
+
+        <p>But java script <strong>does</strong> care. When written between &lt;script&gt; tags it
+
+        must be <strong>backgroundColor</strong>, exactly as written!</p>
+
+        <p>Here is the <strong>code</strong> for this page:</p>
+
+        <blockquote>
+
+          <font SIZE="4" COLOR="#0000ff"><p ALIGN="LEFT">&lt;</font><font SIZE="4" COLOR="#000080">html</font><font
+
+          SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          </font><font SIZE="4" COLOR="#0000ff"><p ALIGN="LEFT">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">head</font><font SIZE="4" COLOR="#0000ff">&gt;</p>
+
+          <p ALIGN="LEFT">&lt;</font><font SIZE="4" COLOR="#000080">title</font><font SIZE="4"
+
+          COLOR="#0000ff">&gt;</font><font SIZE="4">Changing background colour style backgroundColor
+
+          instead of bgColor</font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/title</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          </font><font SIZE="4" COLOR="#800000"><p ALIGN="LEFT">&lt;script type=</font><font
+
+          SIZE="4" COLOR="#0000ff">&quot;text/javascript&quot;</font><font SIZE="4" COLOR="#800000">&gt;&lt;!--</font><font
+
+          SIZE="4" COLOR="#ff0080"><b></p>
+
+          <p ALIGN="LEFT">function</b></font><font SIZE="4" COLOR="#800000"> red()</font><font
+
+          SIZE="4" COLOR="#0000ff"><b></p>
+
+          <p ALIGN="LEFT">{</b></font><font SIZE="4" COLOR="#800000"></p>
+
+          <p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4" COLOR="#0000ff">&quot;red&quot;</p>
+
+          <b><p ALIGN="LEFT">}</font><font SIZE="4" COLOR="#ff0080"></p>
+
+          <p ALIGN="LEFT">function</font></b><font SIZE="4" COLOR="#800000"> blue()</font><font
+
+          SIZE="4" COLOR="#0000ff"><b></p>
+
+          <p ALIGN="LEFT">{</b></font><font SIZE="4" COLOR="#800000"></p>
+
+          <p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4" COLOR="#0000ff">&quot;blue&quot;</p>
+
+          <b><p ALIGN="LEFT">}</font><font SIZE="4" COLOR="#ff0080"></p>
+
+          <p ALIGN="LEFT">function</font></b><font SIZE="4" COLOR="#800000"> fuchsia()</font><font
+
+          SIZE="4" COLOR="#0000ff"><b></p>
+
+          <p ALIGN="LEFT">{</b></font><font SIZE="4" COLOR="#800000"></p>
+
+          <p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4" COLOR="#0000ff">&quot;fuchsia&quot;</p>
+
+          <b><p ALIGN="LEFT">}</font><font SIZE="4" COLOR="#ff0080"></p>
+
+          <p ALIGN="LEFT">function</font></b><font SIZE="4" COLOR="#800000"> yellow()</font><font
+
+          SIZE="4" COLOR="#0000ff"><b></p>
+
+          <p ALIGN="LEFT">{</b></font><font SIZE="4" COLOR="#800000"></p>
+
+          <p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4" COLOR="#0000ff">&quot;yellow&quot;</p>
+
+          <b><p ALIGN="LEFT">}</font><font SIZE="4" COLOR="#ff0080"></p>
+
+          <p ALIGN="LEFT">function</font></b><font SIZE="4" COLOR="#800000"> white()</font><font
+
+          SIZE="4" COLOR="#0000ff"><b></p>
+
+          <p ALIGN="LEFT">{</b></font><font SIZE="4" COLOR="#800000"></p>
+
+          <p ALIGN="LEFT">document.body.style.backgroundColor=</font><font SIZE="4" COLOR="#0000ff">&quot;white&quot;</p>
+
+          <b><p ALIGN="LEFT">}</b></font><font SIZE="4" COLOR="#008000"></p>
+
+          <p ALIGN="LEFT">// --&gt;</font><font SIZE="4" COLOR="#800000"></p>
+
+          <p ALIGN="LEFT">&lt;/script&gt;</font><font SIZE="4"></p>
+
+          </font><font SIZE="4" COLOR="#0000ff"><p ALIGN="LEFT">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/head</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          </font><font SIZE="4" COLOR="#0000ff"><p ALIGN="LEFT">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">body</font><font SIZE="4" COLOR="#0000ff">&gt;</p>
+
+          <p ALIGN="LEFT">&lt;</font><font SIZE="4" COLOR="#000080">table</font><font SIZE="4"><i> </i></font><font
+
+          SIZE="4" COLOR="#800080">border=</font><font SIZE="4" COLOR="#808080">&quot;0&quot;</font><font
+
+          SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">cellpadding=</font><font SIZE="4"
+
+          COLOR="#808080">&quot;5&quot;</font><font SIZE="4"><i></p>
+
+          <p ALIGN="LEFT"></i></font><font SIZE="4" COLOR="#800080">cellspacing=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;0&quot;</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font
+
+          SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">tr</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">td</font><font SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">style=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;background-color:red&quot;</font><font SIZE="4"
+
+          COLOR="#0000ff">&gt;&lt;</font><font SIZE="4" COLOR="#000080">a</font><font SIZE="4"><i> </i></font><font
+
+          SIZE="4" COLOR="#800080">href=</font><font SIZE="4" COLOR="#808080">&quot;#&quot;</font><font
+
+          SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">onclick=</font><font SIZE="4"
+
+          COLOR="#808080">&quot;red()&quot;</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font
+
+          SIZE="4">red</font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/a</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/td</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">td</font><font SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">style=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;background-color:#9595FF&quot;</font><font SIZE="4"
+
+          COLOR="#0000ff">&gt;&lt;</font><font SIZE="4" COLOR="#000080">a</font><font SIZE="4"><i> </i></font><font
+
+          SIZE="4" COLOR="#800080">href=</font><font SIZE="4" COLOR="#808080">&quot;#&quot;</font><font
+
+          SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">onclick=</font><font SIZE="4"
+
+          COLOR="#808080">&quot;blue()&quot;</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font
+
+          SIZE="4">blue</font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/a</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/td</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/tr</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">tr</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">td</font><font SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">style=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;background-color:#ff00ff&quot;</font><font SIZE="4"
+
+          COLOR="#0000ff">&gt;&lt;</font><font SIZE="4" COLOR="#000080">a</font><font SIZE="4"><i> </i></font><font
+
+          SIZE="4" COLOR="#800080">href=</font><font SIZE="4" COLOR="#808080">&quot;#&quot;</font><font
+
+          SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">onclick=</font><font SIZE="4"
+
+          COLOR="#808080">&quot;fuchsia()&quot;</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font
+
+          SIZE="4">fuchsia</font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/a</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/td</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">td</font><font SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">style=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;background-color:yellow&quot;</font><font SIZE="4"
+
+          COLOR="#0000ff">&gt;&lt;</font><font SIZE="4" COLOR="#000080">a</font><font SIZE="4"><i> </i></font><font
+
+          SIZE="4" COLOR="#800080">href=</font><font SIZE="4" COLOR="#808080">&quot;#&quot;</font><font
+
+          SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">onclick=</font><font SIZE="4"
+
+          COLOR="#808080">&quot;yellow()&quot;</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font
+
+          SIZE="4">yellow</font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/a</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/td</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/tr</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/table</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/center</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/div</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">p</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"
+
+          COLOR="#800080">&amp;nbsp;</font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/p</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">form</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">p</font><font SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4"
+
+          COLOR="#000080">input</font><font SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">type=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;button&quot;</font><font SIZE="4"><i> </i></font><font
+
+          SIZE="4" COLOR="#800080">value=</font><font SIZE="4" COLOR="#808080">&quot;Back to white
+
+          background&quot;</font><font SIZE="4"><i> </i></font><font SIZE="4" COLOR="#800080">name=</font><font
+
+          SIZE="4" COLOR="#808080">&quot;B1&quot;</font><font SIZE="4"><i> </i></font><font SIZE="4"
+
+          COLOR="#800080">onclick=</font><font SIZE="4" COLOR="#808080">&quot;white()&quot;</font><font
+
+          SIZE="4" COLOR="#0000ff">&gt;&lt;</font><font SIZE="4" COLOR="#000080">/p</font><font
+
+          SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          <p ALIGN="LEFT"></font><font SIZE="4" COLOR="#0000ff">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/form</font><font SIZE="4" COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          </font><font SIZE="4" COLOR="#0000ff"><p ALIGN="LEFT">&lt;</font><font SIZE="4"
+
+          COLOR="#000080">/body</font><font SIZE="4" COLOR="#0000ff">&gt;</p>
+
+          <p ALIGN="LEFT">&lt;</font><font SIZE="4" COLOR="#000080">/html</font><font SIZE="4"
+
+          COLOR="#0000ff">&gt;</font><font SIZE="4"></p>
+
+          </font>
+
+        </blockquote>
+
+        <p>Next: [<a href="changingfgColor.htm">Changing foreground colour]</a></p>
+
+        <p>&nbsp;</p>
+
+        <hr>
+
+        </td>
+
+        <td valign="top" width="75" style="background-color:yellow"><a
+
+        href="JavaScriptTutorial.htm">Contents</a> <p><a href="scriptTags.htm">Basic Code</a></p>
+
+        <p><a href="alertCode.htm">Alerts</a></p>
+
+        <p><a href="newLines.htm">New Lines</a></p>
+
+        <p><a href="textBoxInput.htm">Text Box Input</a></p>
+
+        <p><a href="changingBgColor.htm">Changing Background Colour</a></p>
+
+        <p><a href="changingfgColor.htm">Changing fgColor</a></td>
+
+      </tr>
+
+      <tr>
+
+        <td colspan="3"><table border="2" width="100%">
+
+          <tr>
+
+            <td>[If you need to learn more about HTML visit the <a
+
+            href="../HTMLGuide/index.html">HTML Tutorial</a>] <p>I am always pleased to hear from you.<br>
+
+            Send your comments to <script language="javascript">
+
+<!--// 
+
+
+
+cn('Ken J Ward','JS2 Changing bgColor');
+
+//-->
+
+</script> </td>
+
+          </tr>
+
+        </table>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+    </div></td>
+
+  </tr>
+
+</table>
+
+</center></div>
+
+
+
+
+
+</div>
+
+</body>
+
+</html>
+
+
+

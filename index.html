@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Mirror</title>
+<!-- CSS -->
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+<link rel="stylesheet" type="text/css" href="css/owfont-master/css/owfont-regular.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+<!-- Scripts -->
+<script type="text/javascript" src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="http://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="http://apis.google.com/js/client.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+<style>
+  	#draggable { 
+		width: 150px;
+		height: 150px; 
+		padding: 0.5em;
+	}
+	.cardtop {
+		display: -webkit-flex;
+		display: flex;		
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-align-content: flex-start;
+		align-content: flex-start;
+	}
+	.cardtop .flex-item {
+		padding: 0px;
+		margin: 0 5px 0 0;
+		text-align: left;
+	}
+	.border {
+		border-right: thin solid white;
+		padding-right: 5px;
+	}
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body> 
+<div class="flex-container">
+	<div id="datetime">
+	  <div id="time" class="flex-item large thin">Time</div>
+	  <div id="date" class="flex-item small">Date</div>
+	</div>
+  	<div id="mic" class="flex-item large">
+		<i class="fa fa-microphone fa-1x" aria-hidden="true" onclick="recognition.start()"></i>
+		<!--<div id="results"></div>-->
+	</div>
+</div>
+
+<div id="allcontent">
+	<div id="output"></div>
+	<div id="panel" class="flex-container-content">
+		<!--<div id="child" class="cardcontainer ui-widget-content"></div><div id="output"></div>-->
+		<div id="left"></div>
+		<div id="right"></div>
+	</div>
+	<div id="panelcenter" class="flex-container-center"></div>
+</div>
+
+<footer style="background-color: aqua; height:100px;">
+	<div id="news" class="">
+		  <div>foo</div>
+		  <div>bar</div>
+		  <div>baz</div>
+		<!--<div class="ticker">
+			<div class="ticker__item">Letterpress chambray brunch.</div>
+		</div>-->
+	</div>
+</footer>
+  
+<!-- End Scripts --> 
+<script type="text/javascript" src="js/app.js"></script> 
+<script>
+  $( function() {
+    $( "#child" ).draggable();
+  } );
+</script>
+</body> 
+</html>

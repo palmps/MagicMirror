@@ -1,0 +1,24 @@
+// JSON Document
+{
+  "short_name": "Magic Mirror",
+  "name": "Nelson - Magic Mirror",
+  "icons": [
+    {
+      "src": "layout/icons/144.transparent.icon.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": 3.0
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "black",
+  "background_color": "black",
+  "screenshots": [{
+    "src": "layout/icons/in-game-2x.jpg",
+    "sizes": "1280x920",
+    "type": "image/jpeg"
+  }]
+}
+  
